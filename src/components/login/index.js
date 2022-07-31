@@ -1,4 +1,5 @@
 import { Row, Col, Button, Typography } from 'antd';
+import Particle from '../Particle';
 import firebase, { auth } from '../../firebase/config';
 import React from 'react';
 import { addDocument, generateKeywords } from '../../firebase/services';
@@ -41,18 +42,21 @@ export default function Login() {
         }
     };
     return (
-        <Row justify="center" style={{ height: 800 }}>
-            <Col span={8}>
-                <Typography.Title level={3} className={cx('title')}>
-                    Chào mừng đến với myChat
-                </Typography.Title>
-                <Button onClick={handleggLogin} className={cx('btn-gg')}>
-                    Đăng nhập với Google
-                </Button>
-                <Button onClick={handleFbLogin} className={cx('btn-fb')}>
-                    Đăng nhập với Facebook
-                </Button>
-            </Col>
-        </Row>
+        <>
+            <Row justify="center" style={{ height: '100vh' }}>
+                <Col span={8}>
+                    <Typography.Title level={3} className={cx('title')}>
+                        Chào mừng đến với myChat
+                    </Typography.Title>
+                    <Button onClick={handleggLogin} className={cx('btn-gg')}>
+                        Đăng nhập với Google
+                    </Button>
+                    <Button onClick={handleFbLogin} className={cx('btn-fb')}>
+                        Đăng nhập với Facebook
+                    </Button>
+                </Col>
+            </Row>
+            <Particle></Particle>
+        </>
     );
 }

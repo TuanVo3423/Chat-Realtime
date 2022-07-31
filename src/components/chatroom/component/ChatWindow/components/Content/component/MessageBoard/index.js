@@ -29,8 +29,6 @@ export default function MessageBoard() {
         }
     }, [messages]);
 
-    console.log({ messages, condition });
-
     return (
         <div className={cx('wrap-messages')} ref={messageListRef}>
             {messages.map((mes) => (

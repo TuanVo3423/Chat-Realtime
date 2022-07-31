@@ -1,12 +1,12 @@
 import { UserAddOutlined } from '@ant-design/icons';
 import { Button, Avatar, Tooltip, Alert } from 'antd';
 import classnames from 'classnames/bind';
-import { useContext } from 'react';
+import { useContext, memo } from 'react';
 import { AppContext } from '../../../../../../context/AppProvider';
 import styles from '../header/header.module.scss';
 const cx = classnames.bind(styles);
 
-export default function Header({ roomCurrent, users }) {
+function Header({ roomCurrent, users }) {
     const { setShowInvite } = useContext(AppContext);
     return (
         <>
@@ -42,3 +42,4 @@ export default function Header({ roomCurrent, users }) {
         </>
     );
 }
+export default memo(Header);
