@@ -1,0 +1,29 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(230,230,230);
+    border-radius: 2px;
+}
+.wrap-input{
+    margin: 0;
+    flex: 1;
+    padding: 2px;
+}
+.input {
+    border: none;
+
+}
+
+.btn-send {
+    color: #fff;
+    background: #1890ff;
+    border-color: #1890ff;
+    text-shadow: 0 -1px 0 rgb(0 0 0 / 12%);
+    box-shadow: 0 2px 0 rgb(0 0 0 / 5%);
+    &:hover {
+        color: #fff;
+        background: #40a9ff;
+        border-color: #40a9ff;
+    }
+}

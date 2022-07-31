@@ -1,0 +1,43 @@
+.wrapper {
+    color: white;
+    background-color: #3f0e40;
+    height: 100vh;
+}
+.Info-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    border-bottom: 1px solid rgba(82,38,83);
+}
+.left-info{
+    display: flex;
+    align-items: center;
+}
+.user-name{
+    color: white;
+    margin-left: 5px;
+}
+
+// RoomList
+.roomlist-title > div{
+    color: white !important;
+}
+.roomlist-title div:last-child {
+    padding: 0 12px;
+}
+.room-list {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    .room-item {
+        margin-bottom: 5px;
+    }
+    .btn-add-room{
+        border: none;
+        padding: 0;
+        &:hover{
+            color: rgb(206, 206, 206);
+        }
+    }
+}
