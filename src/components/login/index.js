@@ -45,13 +45,13 @@ export default function Login() {
         <>
             <Row justify="center" style={{ height: '100vh' }}>
                 <Col span={8}>
-                    <Typography.Title level={3} className={cx('title')}>
-                        Chào mừng đến với myChat
+                    <Typography.Title style={{color : 'white'}} level={3} className={cx('title')}>
+                        Chào mừng đến với FunChat
                     </Typography.Title>
-                    <Button onClick={handleggLogin} className={cx('btn-gg')}>
+                    <Button ghost onClick={handleggLogin} className={cx('btn-gg')}>
                         Đăng nhập với Google
                     </Button>
-                    <Button onClick={handleFbLogin} className={cx('btn-fb')}>
+                    <Button ghost onClick={handleFbLogin} className={cx('btn-fb')}>
                         Đăng nhập với Facebook
                     </Button>
                 </Col>

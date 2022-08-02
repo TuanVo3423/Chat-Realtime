@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router-dom';
 import { Spin } from 'antd';
 import { createContext } from 'react';
 export const AuthContext = createContext();
-
 export default function AuthProvider({ children }) {
     const [user, setUser] = useState({});
     const [isLoading, setIsLoading] = useState(true);
